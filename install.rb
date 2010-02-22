@@ -20,8 +20,10 @@ Dir.glob('*').reject{|file| ignore.include?(file) }.each do |config_file|
     puts "Moving file from #{dot_config_file_full_path} to #{File.join(config_backup, dot_config_file)}"
     File.move dot_config_file_full_path, File.join(config_backup, dot_config_file)
   end
- 
-  puts "Linking file #{config_file_full_path} to #{dot_config_file_full_path}"
-  File.symlink config_file_full_path, dot_config_file_full_path
+
+  if !File.exists?(dot_config_file_full_path)
+    puts "Linking file #{config_file_full_path} to #{dot_config_file_full_path}"
+    File.symlink config_file_full_path, dot_config_file_full_path
+  end
 end
 
