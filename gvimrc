@@ -1,3 +1,5 @@
+set guioptions-=T
+
 set lines=55 columns=125
 colorscheme slate2
 
