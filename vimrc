@@ -18,7 +18,7 @@ augroup END
 
 let mapleader = ","
  
-map <Leader>h :FuzzyFinderTextMate<CR>
+map <Leader>t :FuzzyFinderTextMate<CR>
 map <Leader>n :NERDTreeToggle<CR>
 
 au! BufWritePost vimrc,gvimrc source %
