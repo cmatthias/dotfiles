@@ -20,5 +20,6 @@ let mapleader = ","
  
 map <Leader>t :FuzzyFinderTextMate<CR>
 map <Leader>n :NERDTreeToggle<CR>
+map <Leader>gu :Git push --all<CR>
 
 au! BufWritePost vimrc,gvimrc source %
