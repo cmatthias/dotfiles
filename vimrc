@@ -3,7 +3,7 @@ set nocompatible
 syntax on
 filetype plugin indent on
 
-colorscheme slate2
+colorscheme herald 
 
 " get rid of horrid pink dialog for fuzzyfinder_textmate
 hi Pmenu guibg=#CECECE guifg=#444444 gui=bold
